@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+body{
+  background:linear-gradient(to right,#adff2f,#006400);
+  color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1,h4{
+  text-align: center;
+}
+h1{
+  font-size:50px;
+}
+.images .images2{
+  display:flex;
+  flex-wrap:wrap;
+  padding:4px 16px;
+}
+.images img{
+    width:490px;
+    height:360px;  
+    box-sizing: border-box;
+    opacity: 1.0;
+    border:.8px solid;
+    border-radius: 10px 14px;
+    filter: grayscale(80%) blur(0.2px);
+    transition: 0.8s ease-in-out;
+}
+.images img:hover{
+  filter: grayscale(0%) blur(0px);
+  transition: 0.8s ease-in-out;
+  transform: scale(0.91,0.96);
+}
+.images2 img{
+  width:490px;
+  height:360px; 
+  box-sizing: border-box;
+  opacity: 1.2;
+  filter: grayscale(85%) blur(0.2px);
+  border:.8px solid;
+  border-radius: 10px 14px;  
+}
+.images2 img:hover{
+  filter: grayscale(0%) blur(0px);
+  transition: 0.9s ease-in-out;
+  transform: scale(0.96,0.91);
+}
+/*.border{
+  margin:0;
+ padding:0;
+  width:96.8%;
+  background:whitesmoke;
+  border-color:transparent;
+  border-radius:14px;
+}*/
+
+@keyframes header{
+  from{color:whitesmoke;}
+  to{color:darkgreen;}
+}
+.bg{
+  animation-name:header;
+  animation-duration:3.5s;
+  animation-iteration-count:5;
+  animation-timing-function:ease-in-out;
+}
